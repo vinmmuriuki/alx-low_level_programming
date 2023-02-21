@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	printf("Size of double: %zu bytes\n", sizeof(doubleType));
-	printf("Size of float: %zu bytes\n", sizeof(floatType));
+	printf("Size of char: %i byte(s)\n", sizeof(char));
+	printf("Size of an int %i byte(s)\n", sizeof(int));
 	return (0);
 }
