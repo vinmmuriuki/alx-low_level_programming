@@ -1,19 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _isupper - function declaration
+ * Description: check case of c
+ * @c: character to test
+ * Return: 1 for true and 0 for false
  */
 
-int main(void)
-{
-	char c;
+int _isupper(int c);
 
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
-	return (0);
+/**
+ * _isupper - function definition
+ * Description: tests case of c
+ * @c: character to test
+ * Return: 1 if upper 0 if not upper
+ */
+
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
